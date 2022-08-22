@@ -39,6 +39,7 @@
         } else if (guess.length !== 1) {
           alert('Please enter a single letter.');
         } else {
+            guess = guess.toLocaleLowerCase();
           //Оновлюємо стан гри за допомогою змінного параментра guess//
           for (let j = 0; j < word.length; j++) {
             if (word[j] === guess) {
